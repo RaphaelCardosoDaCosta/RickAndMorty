@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: azure;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background: url(./assets/daniele-levis-pelusi-Vo6A7rwmAJk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.3rem;
+    border-radius: 12px;
+
+    background-color: rgba(0, 0, 0, 0.884);
+
+}
+.container h1{
+    color: rgba(240, 255, 255, 0.856);
+}
+
+.container img {
+    width: 40rem;
+}
+
+#btnOK {
+    width: 140px;
+    padding: 0.4rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+
+    border: none;
+    border-radius: 6px;
+
+}
+
+#btnOK:hover {
+    background: linear-gradient(green, rgb(83, 247, 178));
+    color: #24325fff;
+}
+
+#input {
+    padding: .4rem;
+    margin: 0.9rem;
+
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid ;
+
+    font-size: 1.2em;
+    text-align: center;
+    outline: none;
+}
+
+#character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.897);
+    border-radius: 20px;
+
+    width: 23rem;
+    height: 36rem;    
+
+    display: none;
+
+}
+
+#image{
+    width: 60%;
+    height: 40%; 
+    margin-top: 30px;
+
+    border-radius: 50%;
+    background-color: azure;
+}
+
+#content{
+    width: 96%;
+    height: 50%; 
+    margin-top: 40px;
+
+    color: rgba(240, 255, 255, 0.856);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}

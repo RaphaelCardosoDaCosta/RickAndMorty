@@ -100,14 +100,18 @@ body{
 }
 
 #content{
-    width: 96%;
+    width: 50% auto;
     height: 50%; 
     margin-top: 40px;
 
-    color: rgba(240, 255, 255, 0.856);
-
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    text-align: center;
+
     flex-direction: column;
+}
+
+#content h3 {
+    margin-bottom: 0.9rem;
+    font-size: 1.7rem;
+    color: rgba(240, 255, 255, 0.644);
 }

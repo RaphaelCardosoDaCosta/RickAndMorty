@@ -6,13 +6,6 @@ const image = document.getElementById('image');
 const container = document.getElementById('container');
 const content = document.getElementById('content');
 
-// const name = document.getElementById('name')
-// const status = document.getElementById('status')
-// const species = document.getElementById('species')
-// const gender = document.getElementById('gender')
-
-
-
 function getProfile (IDvalue) {
     const req = fetch(`https://rickandmortyapi.com/api/character/${IDvalue}`)
         .then((data) =>
@@ -20,18 +13,6 @@ function getProfile (IDvalue) {
 
     return req;
 }
-
-async function ex () {
-    const requisicao = await getProfile(99);
-
-    const sacar = Object.keys(requisicao);
-    
-    console.log(sacar)
-}
-
-ex();
-
-
 
 
 btnOk.addEventListener('click', async () => {
@@ -43,20 +24,14 @@ btnOk.addEventListener('click', async () => {
     
     const inArray = Object.entries(search);
 
-    let IDname = inArray[1];
-    let IDstatus = inArray[2];
-    let IDspecies = inArray[3];
-    let IDgender = inArray[5];
 
-    console.log(inArray)
-
-
-    inArray.map((keys) => content.innerHTML += `<li> ${keys} </li>`)
+    inArray.map((keys) => content.innerHTML = `<h3> name: ${search.name} </h3>
+                                                <h3> origin: ${search.origin.name} </h3>
+                                                <h3> species: ${search.species} </h3>
+                                                <h3> gender: ${search.gender} </h3>
+                                                <h3> status: ${search.status} </h3>`);
 
     image.src = search.image;
-
-    // content.innerHTML = `${"heloooow"}`
-
 })
 
 
